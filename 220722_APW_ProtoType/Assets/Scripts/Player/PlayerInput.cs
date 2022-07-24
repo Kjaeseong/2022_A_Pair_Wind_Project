@@ -4,41 +4,50 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public bool InputUp;
-    public bool InputDown;
-    public bool InputLeft;
-    public bool InputRight;
+    public bool Up;
+    public bool Down;
+    public bool Left;
+    public bool Right;
 
-    public bool InputA;
-    public bool InputS;
-    public bool InputD;
-    public bool InputW;
+    public bool A;
+    public bool S;
+    public bool D;
+    public bool W;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)) { InputUp = true; }
-        else { InputUp = false; }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        { 
+            Up = true; 
+        }
+        else { Up = false; }
 
-        if (Input.GetKey(KeyCode.DownArrow)) { InputDown = true; }
-        else { InputDown = false; }
+        if (Input.GetKey(KeyCode.DownArrow)) 
+        {
+            Down = true; 
+        }
+        else { Down = false; }
 
-        if (Input.GetKey(KeyCode.LeftArrow)) { InputLeft = true; }
-        else { InputLeft = false; }
+        if (Input.GetKey(KeyCode.LeftArrow)) 
+        { 
+            Left = true; 
+        }
+        else { Left = false; }
 
-        if (Input.GetKey(KeyCode.RightArrow)) { InputRight = true; }
-        else { InputRight = false; }
+        if (Input.GetKey(KeyCode.RightArrow)) { Right = true; }
+        else { Right = false; }
 
-        if (Input.GetKeyDown(KeyCode.A)) { InputA = true; }
-        else { InputA = false; }
+        if (Input.GetKeyDown(KeyCode.A)) { A = true; }
+        else { A = false; }
 
-        if (Input.GetKeyDown(KeyCode.S)) { InputS = true; }
-        else { InputS = false; }
+        if (Input.GetKeyDown(KeyCode.S)) { S = true; }
+        else { S = false; }
 
-        if (Input.GetKeyDown(KeyCode.D)) { InputD = true; }
-        else { InputD = false; }
+        if (Input.GetKeyDown(KeyCode.D)) { D = true; }
+        else { D = false; }
 
-        if (Input.GetKeyDown(KeyCode.W)) { InputW = true; }
-        else { InputW = false; }
+        if (Input.GetKeyDown(KeyCode.W)) { W = true; }
+        else { W = false; }
 
 
 
