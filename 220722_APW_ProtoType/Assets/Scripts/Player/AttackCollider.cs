@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackCollider : MonoBehaviour
 {
-    public PlayerCharacter P1;
+    public TestPlayer P1;
 
     private float _scaleX = 2f;
     private float _scaleY = 2f;
